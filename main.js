@@ -1,11 +1,7 @@
 import utilsModules from "./src/utils/utilsModule";
-function test(){
-  console.log("heihei",this);
-  return '111'
-}
-function test1(){
+var {instanceOf} = utilsModules
 
-}
-let res = test.myCall(test1,'heihie')
-console.log(res);
-let arr = [1,2]
+
+var num = function(){}
+console.log(instanceOf(function(){},Object));
+console.log(num instanceof Object);
